@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/css/list-style.css" rel="stylesheet" type="text/css">
+        <title>Dicton</title>
+    </head>
+    <body>
+        <h2>Tous les dictons:</h2>
+        <ul>
+            <% dictons.forEach((dicton,index) => { %>
+                <li>
+                    <a href="/<%= index + 1%>"><%= dicton.dicton %></a>
+                </li>
+            <%});%>
+        </ul>
+    </body>
+</html>

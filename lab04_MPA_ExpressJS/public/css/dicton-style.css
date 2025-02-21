@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #333;
+}
+
+q {
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 20px;
+}

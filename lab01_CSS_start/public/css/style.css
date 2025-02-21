@@ -1,0 +1,181 @@
+body {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#player {
+  height: 80px;
+  width: 100%;
+  border-top: 1px solid #e5e7eb;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#song-infos {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  width: 200px;
+}
+
+#song-infos img {
+  width: 80px;
+  height: 80px;
+}
+
+.song {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-left: 16px;
+}
+
+#control-buttons {
+  width: 184px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#control-buttons img {
+  margin: 0;
+  height: 40px;
+  width: 40px;
+}
+
+#deezer-logo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: end;
+  flex-grow: 1;
+  padding-right: 16px;
+  width: 200px;
+}
+
+#deezer-logo img {
+  height: 30px;
+  width: 150px;
+}
+
+#atop-player {
+  left: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: calc(100vh - 80px);
+  width: 100%;
+}
+
+#queue {
+  width: 330px;
+  height: 100%;
+  background-color: #f3f4f6;
+  border-left: #e5e7eb 1px solid;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#queue #info-queue {
+  padding-top: 32px;
+  padding-left: 32px;
+}
+
+#queue #grey-text {
+  justify-self: center;
+  align-self: center;
+}
+
+.interactive:hover {
+  cursor: pointer;
+  background-color: gray;
+  transition: background-color 0.3s;
+}
+
+main {
+  overflow: auto;
+  padding-left: 86px;
+  padding-top: 86px;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-bottom: 40px;
+}
+
+#playlist-info {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 48px;
+}
+
+#playlist-credits {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: end;
+  row-gap: 8px;
+}
+
+#playlist-songs {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 32px;
+}
+
+#playlist-info img {
+  width: 250px;
+  height: 250px;
+  margin-right: 32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+  font-family: "Noto Sans", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h3#grey-text {
+  color: #9ca3af;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+h6 {
+  font-size: 12px;
+  line-height: 18px;
+}
